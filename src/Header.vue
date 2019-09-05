@@ -15,9 +15,7 @@ export default {
   ul {
     list-style-type: none;
     margin: auto;
-    
   }
-
   li {
     display: inline-block;
     margin: 1rem;

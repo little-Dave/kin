@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from './components/Login.vue'
-import Kin from './components/Kin.vue'
+import Login from './views/Login.vue'
+import Kin from './views/Kin.vue'
 
 Vue.use(Router)
 

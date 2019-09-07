@@ -3,7 +3,7 @@
 
     <app-header></app-header>
     
-    <router-view :getUser="setUser"/>
+    <router-view :getUser="setUser" :userInfo="currentUser" />
     
   </div>
 </template>

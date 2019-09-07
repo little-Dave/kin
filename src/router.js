@@ -9,7 +9,7 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-    { path: "/login", component: Login},
+    { path: "/", component: Login},
     { path: "/kin", component: Kin}
   ]
 })

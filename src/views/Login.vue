@@ -4,7 +4,7 @@
     <h1>This is the login page</h1>
 
     <div v-if="!newUser">
-      <app-login-form></app-login-form>
+      <app-login-form :getUser="getUser"></app-login-form>
       <button @click="toggleNewUser">Create account</button>
     </div>
     <div v-else>
@@ -26,6 +26,7 @@
         newUser: false
       }
     },
+    props: ["getUser"],
     methods: {
       toggleNewUser() {
         this.newUser = !this.newUser;

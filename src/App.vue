@@ -3,9 +3,12 @@
 
     <app-header></app-header>
     
-    <router-view/>
+    <router-view :getUser="setUser"/>
+    
   </div>
 </template>
+
+
 
 <script>
   import Header from "./components/Header.vue"
@@ -13,14 +16,21 @@
   export default {
     data() {
       return {
-        currentUser: 
+        currentUser: {}
       }
+    },
+    methods: {
+     setUser(resp) {
+       this.currentUser = resp.data;
+     }
     },
     components: {
       "app-header": Header
     }
   }
 </script>
+
+
 
 <style>
 

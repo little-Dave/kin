@@ -34,10 +34,11 @@
         }
       }
     },
+    props: ["getUser"],
     methods: {
       logIn() {
         axios.get("http://localhost:3000/users/".concat(this.user.username))
-          .then(resp => console.log("response", resp))
+          .then(resp => this.getUser(resp))
       }
     }
   }

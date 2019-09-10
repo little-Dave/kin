@@ -1,7 +1,8 @@
 <template>
   <div>
     
-    <div>{{person.name}}</div>
+    <h2>{{ person.first_name }} {{ person.last_name }}</h2>
+    <img :src="person.tile_image" />
 
   </div>
 </template>
@@ -17,5 +18,7 @@
 
 
 <style scoped>
-
+  h2 {
+    font-family: sans-serif;
+  }
 </style>

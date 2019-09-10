@@ -1,16 +1,15 @@
 <template>
   <div>
-  <!-- <ul>
-    <li><router-link to="/">Login</router-link></li>
-    <li><router-link to="/kin">Kin</router-link></li>
-  </ul> -->
+    
     <h1>KIN</h1>
-    <router-link to="/">
-      <span 
-            id="sign-out-icon" 
-            class="fas fa-sign-out-alt fa-lg">
-      </span>
-    </router-link>
+    
+    <ul>
+      <li>profile</li>
+      <router-link to="/">
+        <li id="sign-out">sign out</li>
+      </router-link>
+    </ul>
+
   </div>
 </template>
 
@@ -27,17 +26,25 @@
 <style scoped>
   h1 {
     font-family: "Amatic SC", sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
     margin-left: .25rem;
     display: inline-block;
   }
-  #sign-out-icon {
-    display: inline-block;
+  #sign-out {
+    margin-left: 1.5rem;
+  }
+  ul {
     float: right;
-    margin-top: 1.2rem;
-    cursor: pointer;
+    margin-top: 2rem;
+    margin-right: .25rem;
+    list-style: none;
+  }
+  li {
+    font-family: "Rokkitt", sans-serif;
+    font-size: 1.25rem;
+    display: inline-block;
   }
   a {
     color: black;

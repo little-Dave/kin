@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div id="page">
 
     <ul v-for="person in userInfo.people">
       <app-person-tile :person="person"></app-person-tile>
     </ul>
-
+    
   </div>
 </template>
 
@@ -24,5 +24,16 @@
 
 
 <style scoped>
+  #page {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .25rem;
+    /* border: 1px solid black; */
+  }
+  ul {
+    display: inline-block;
+    margin-left: 0;
+  }
 
 </style>

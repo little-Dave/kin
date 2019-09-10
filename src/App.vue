@@ -1,10 +1,8 @@
 <template>
   <div>
-
-    <app-header></app-header>
-    
+    <!-- <app-header></app-header> -->
     <router-view :getUser="setUser" :userInfo="currentUser" />
-    
+    <!-- {{currentUser}} -->
   </div>
 </template>
 
@@ -33,5 +31,5 @@
 
 
 <style>
-
+ 
 </style>

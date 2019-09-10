@@ -1,14 +1,17 @@
 <template>
   <div>
 
-    <h1>This is the login page</h1>
-
-    <div v-if="!newUser">
-      <app-login-form :getUser="getUser"></app-login-form>
-      <button @click="toggleNewUser">Create account</button>
-    </div>
-    <div v-else>
-      <app-create-user-form></app-create-user-form>
+    <div id="background"></div>
+      <h1 id="brand">KIN</h1>
+      <div id="returning-user-form" v-if="!newUser">
+        <app-login-form :getUser="getUser"></app-login-form>
+        <p>new?</p>
+        <button @click="toggleNewUser">create an account</button>
+      </div>
+      <div id="create-user-form" v-else>
+        <app-create-user-form></app-create-user-form>
+        <button @click="toggleNewUser">Back to login</button>
+      </div>
     </div>
 
   </div>
@@ -43,8 +46,53 @@
 
 <style scoped >
   h1 {
-    font-family: sans-serif;
-    text-align: center;
-    color: lightgray;
+    font-family: "Amatic SC", sans-serif;
+    font-size: 4rem;
+    display: inline-block;
+    margin-top: 10%;
+    margin-bottom: 0rem;
+    margin-left: 37.75%;
+    /* color: white; */
   }
+  p {
+    font-family: "Rokkitt", serif;
+    font-size: 1.25rem;
+    margin-bottom: -.4rem;
+  }
+  button {
+    /* margin-top: 2rem; */
+    height: 1.75rem;
+    /* background-color: none; */
+    border-radius: .2rem;
+    padding-top: .15rem;
+    border: none;
+    font-family: "Rokkitt", serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-left: 0;
+    margin-top: 0;
+    outline: none;
+  }
+  #returning-user-form {
+    margin: auto;
+    margin-top: 1rem;
+    width: max-content;
+    align-content: center;
+  }
+  #create-user-form {
+    margin-left: 43%;
+    margin-top: 1rem;
+    width: max-content;
+    align-content: center;
+  }
+  #background {
+    /* background-image: url("../assets/kinPhoto.png"); */
+    /* background-color: darkolivegreen; */
+    position: fixed;
+    height: 100vh;
+    width: 42.75%;
+    z-index: -1;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+  } 
 </style>

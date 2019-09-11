@@ -4,7 +4,8 @@
     <h1>KIN</h1>
     
     <ul>
-      <li>profile</li>
+      <li id="add"><strong>+</strong> someone</li>
+      <li id="profile">profile</li>
       <router-link to="/">
         <li id="sign-out">sign out</li>
       </router-link>
@@ -34,6 +35,10 @@
   }
   #sign-out {
     margin-left: 1.5rem;
+  }
+  #add {
+    margin-right: 1.5rem;
+    cursor: pointer;
   }
   ul {
     float: right;

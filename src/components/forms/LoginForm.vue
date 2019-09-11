@@ -58,6 +58,7 @@
     padding-top: .15rem;
     border: 1px solid black;
     margin-top: 1rem;
+    outline: none;
   }
   a {
     text-decoration: none;

@@ -1,8 +1,8 @@
 <template>
-  <div id="page">
-
+  <div id="container">
+    
     <ul v-for="person in userInfo.people">
-      <app-person-tile :person="person"></app-person-tile>
+      <app-person-tile :person="person" @showPerson="getPersonToShow"></app-person-tile>
     </ul>
     
   </div>
@@ -14,17 +14,17 @@
   import PersonTile from "./PersonTile.vue"
 
   export default {
-    props: ["userInfo"],
+    props: ["userInfo", "getPersonToShow"],
     components: {
       "app-person-tile": PersonTile
-    }
+    },
   }
 </script>
 
 
 
 <style scoped>
-  #page {
+  #container {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -35,5 +35,4 @@
     display: inline-block;
     margin-left: 0;
   }
-
 </style>

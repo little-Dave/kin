@@ -1,8 +1,9 @@
 <template>
   <div>
     
+    <p @click="goBack" v-if="backArrow" id="back-arrow" class="fas fa-angle-left fa-lg"></p>
     <h1>KIN</h1>
-    
+
     <ul>
       <li id="add"><strong>+</strong> someone</li>
       <li id="profile">profile</li>
@@ -18,7 +19,12 @@
 
 <script>
   export default {
- 
+    props: ["backArrow"],
+    methods: {
+      goBack() {
+        this.$emit("goBack")
+      }
+    }
   }
 </script>
  
@@ -53,5 +59,12 @@
   }
   a {
     color: black;
+  }
+  #back-arrow {
+    margin-left: -1.1rem;
+    display: inline-block;
+    float: left;
+    margin-top: 1.3rem;
+    cursor: pointer;
   }
 </style>

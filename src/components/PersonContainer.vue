@@ -2,8 +2,8 @@
   <div id="container">
   <!-- {{personToShow}} -->
   
-    <div id="lg-photo" :style="{backgroundImage: 'url(' + personToShow.tile_image + ')'}"></div>
-    <app-photo-tile-container :photos="personToShow.photos"></app-photo-tile-container>
+    <div id="lg-photo" :style="{backgroundImage: 'url(' + largeImage + ')'}"></div>
+    <app-photo-tile-container :photos="personToShow.photos" :getImageFromTile="setLargeImage"></app-photo-tile-container>
     <h2>{{personToShow.first_name}}</h2>
     <app-memory-tile-container></app-memory-tile-container>
 
@@ -18,10 +18,25 @@
   import MemoryTileContainer from "./MemoryTileContainer.vue"
 
   export default {
+    data() {
+      return {
+        largeImage: this.personToShow.tile_image
+      }
+    },
     props: ["personToShow"],
     components: {
       "app-photo-tile-container": PhotoTileContainer,
       "app-memory-tile-container": MemoryTileContainer
+    },
+    methods: {
+      setLargeImage(selectedImage) {
+        let photoId = selectedImage
+        let photo = this.personToShow.photos.find(function(photo){
+          return photo.id == photoId
+        }).file_name
+        this.largeImage = photo
+        // console.log(this.personToShow.photos)
+      }
     }
   }
 </script>
@@ -49,6 +64,7 @@
   }
   #lg-photo {
     background-size: cover;
+    /* background-position: 50% 50%; */
     width: 50%;
     height: 45vh;
     /* border: 1px solid blue;     */

@@ -5,8 +5,12 @@
     <div id="lg-photo" :style="{backgroundImage: 'url(' + largeImage + ')'}"></div>
     <app-photo-tile-container :photos="personToShow.photos" :getImageFromTile="setLargeImage"></app-photo-tile-container>
     <h2>{{personToShow.first_name}}</h2>
-    <app-memory-tile-container></app-memory-tile-container>
-
+    <app-memory-tile-container :memories="personToShow.memories"></app-memory-tile-container>
+    
+    <p id="add-details">
+      <span id="add-memory">+</span>
+      <span id="add-photo">+</span>
+    </p>
 
   </div>
 </template>
@@ -31,7 +35,7 @@
     methods: {
       setLargeImage(selectedImage) {
         let photoId = selectedImage
-        let photo = this.personToShow.photos.find(function(photo){
+        let photo = this.personToShow.photos.find(function(photo) {
           return photo.id == photoId
         }).file_name
         this.largeImage = photo
@@ -57,18 +61,33 @@
   }
   #container {
     /* border: 1px solid black; */
-    width: 75%;
+    width: 74%;
     margin-left: auto;
     margin-right: auto;
     min-height: 80vh;
   }
   #lg-photo {
     background-size: cover;
-    /* background-position: 50% 50%; */
+    background-position: 50% 50%;
     width: 50%;
     height: 45vh;
-    /* border: 1px solid blue;     */
     margin-left: 2.5rem;
     float: left;
+  }
+  #add-details {
+    font-family: "Rokkitt", sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 2.5rem;
+    margin-left: 37%;
+  }
+  #add-memory {
+    cursor: pointer;
+  }
+  #add-photo {
+    margin-left: 38.3rem;
+    cursor: pointer;
   }
 </style>

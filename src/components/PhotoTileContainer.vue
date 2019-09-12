@@ -45,6 +45,7 @@
     display: inline-block;
     list-style-type: none;
     padding-inline-start: .0rem;
-    margin-top: 0;
+    /* PP margin-top to 0 */
+    margin-top: -.3rem;
   }
 </style>

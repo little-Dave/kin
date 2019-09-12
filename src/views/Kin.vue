@@ -1,7 +1,8 @@
 <template>
   <div>
+
     <!-- {{personToShow}} -->
-    <app-header class="nav"></app-header>
+    <app-header @goBack="resetPersonToShow" :backArrow="personToShow.first_name" class="nav"></app-header>
 
     <app-people-container v-if="!personToShow.first_name" :userInfo="userInfo" :getPersonToShow="setPersonToShow"></app-people-container>
     <app-person-container v-else :personToShow="personToShow"></app-person-container>
@@ -25,6 +26,10 @@
       // setPersonToShow passed to PeopleContainer, where it's passed to PersonTile as a custom event
       setPersonToShow(resp) {
         this.personToShow = resp.data
+      },
+      resetPersonToShow() {
+        this.personToShow = {}
+        // console.log("hi")
       }
     },
     components: {
@@ -49,4 +54,5 @@
     border-bottom: .5px solid black;
     z-index: 50;
   }
+
 </style>

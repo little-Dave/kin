@@ -51,7 +51,9 @@
     display: inline-block;
     margin-top: 10%;
     margin-bottom: 0rem;
-    margin-left: 37.75%;
+    margin-left: 41%
+    /* PP margin left back to below */
+    /* margin-left: 37.75%; */
     /* color: white; */
   }
   p {
@@ -80,7 +82,7 @@
     align-content: center;
   }
   #create-user-form {
-    margin-left: 43%;
+    margin-left: 45%;
     margin-top: 1rem;
     width: max-content;
     align-content: center;

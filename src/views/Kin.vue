@@ -1,7 +1,6 @@
 <template>
   <div>
-
-    <!-- {{personToShow}} -->
+    
     <app-header @goBack="resetPersonToShow" :backArrow="personToShow.first_name" class="nav"></app-header>
 
     <app-people-container v-if="!personToShow.first_name" :userInfo="userInfo" :getPersonToShow="setPersonToShow"></app-people-container>
@@ -29,7 +28,6 @@
       },
       resetPersonToShow() {
         this.personToShow = {}
-        // console.log("hi")
       }
     },
     components: {

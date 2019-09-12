@@ -67,4 +67,7 @@
     margin-top: 1.3rem;
     cursor: pointer;
   }
+  #profile {
+    cursor: pointer;
+  }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <app-header></app-header> -->
+
     <router-view :getUser="setUser" :userInfo="currentUser" />
     <!-- {{currentUser}} -->
   </div>
@@ -9,7 +9,7 @@
 
 
 <script>
-  import Header from "./components/Header.vue"
+  // import Header from "./components/Header.vue"
 
   export default {
     data() {
@@ -31,5 +31,5 @@
 
 
 <style>
- 
+
 </style>

@@ -40,6 +40,7 @@
     padding-left: 0rem;
     justify-content: space-between;
     align-content: flex-start;
+    cursor: ns-resize;
   }
   ul {
     display: inline-block;

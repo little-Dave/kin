@@ -80,14 +80,14 @@
     font-weight: 200;
     bottom: 0;
     position: absolute;
-    margin-bottom: 2.5rem;
-    margin-left: 37%;
+    margin-bottom: .75rem;
+    margin-left: 37.75%;
   }
   #add-memory {
     cursor: pointer;
   }
   #add-photo {
-    margin-left: 38.3rem;
+    margin-left: 27rem;
     cursor: pointer;
   }
 </style>

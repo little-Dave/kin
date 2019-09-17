@@ -27,8 +27,8 @@
   #container {
     width: 75%;
     margin-left: auto;
-    /* PP change right margin back to auto */
-    margin-right: 14rem;
+    /* PP change right margin back to auto from 14rem*/
+    margin-right: auto;
     padding-left: .25rem;
     /* border: 1px solid black; */
   }

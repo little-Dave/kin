@@ -1,18 +1,20 @@
 <template>
   <div>
 
-    <div id="background"></div>
+ 
       <h1 id="brand">KIN</h1>
+
       <div id="returning-user-form" v-if="!newUser">
         <app-login-form :getUser="getUser"></app-login-form>
         <p>new?</p>
         <button @click="toggleNewUser">create an account</button>
       </div>
+      
       <div id="create-user-form" v-else>
         <app-create-user-form></app-create-user-form>
         <button @click="toggleNewUser">Back to login</button>
       </div>
-    </div>
+    
 
   </div>
 </template>
@@ -51,9 +53,9 @@
     display: inline-block;
     margin-top: 10%;
     margin-bottom: 0rem;
-    margin-left: 41%
+    /* margin-left: 41% */
     /* PP margin left back to below */
-    /* margin-left: 37.75%; */
+    margin-left: 38.25%;
     /* color: white; */
   }
   p {
@@ -82,7 +84,7 @@
     align-content: center;
   }
   #create-user-form {
-    margin-left: 45%;
+    margin-left: 43.25%;
     margin-top: 1rem;
     width: max-content;
     align-content: center;

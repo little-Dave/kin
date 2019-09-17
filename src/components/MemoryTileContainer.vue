@@ -29,16 +29,19 @@
     border-bottom: 1px solid black;
     width: 49.75%;
     margin-left: 2.5rem;
-    height: 25.3vh;
+    height: 25.6vh;
+    /* height: 25.3vh; */
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
     float: left;
     /* PP change top margin and height */
-    margin-top: .5rem;
+    margin-top: -.7rem;
+    /* margin-top: .5rem; */
     margin-bottom: 12rem;
     background-color: #FFF9F2;
     padding-top: 1rem;
+    cursor: ns-resize;
     /* cursor: move; */
   }
   ul {

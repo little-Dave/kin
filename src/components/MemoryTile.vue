@@ -24,5 +24,6 @@
     font-size: 1.25rem;
     margin-right: auto;
     margin-top: 0rem;
+    display: block;
   }
 </style>

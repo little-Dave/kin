@@ -2,7 +2,7 @@
 
                                              Create an account
                                              
-
+![](kin_createNewUser.gif)
 ## Project setup
 ```
 npm install

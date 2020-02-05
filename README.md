@@ -1,5 +1,7 @@
 # README
 
+                                             Create an account
+                                             
 ![](kin_createNewUser.gif)
 ## Project setup
 ```

@@ -1,5 +1,6 @@
 # README
 
+![](kin_createNewUser.gif)
 ## Project setup
 ```
 npm install

@@ -1,4 +1,4 @@
-# kin
+# README
 
 ## Project setup
 ```

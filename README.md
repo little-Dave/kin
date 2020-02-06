@@ -1,5 +1,7 @@
 # README
-
+## Kin
+The best parts of life are often defined by the memories we make with other people. People — friends, family, *people* — help teach us about life and about ourselves, and in this way, they help us find meaning while we're here. We hold these memories in our hearts and feel them deeply, but every once in a while, years will go by before something — a smell, a song, the color of the sky — jogs a memory. Document it. Here. Let's spend more time reminding ourselves what life is really about. Spend more time remembering your kin. 
+                                             
                                              Create an account
                                              
 ![](kin_createNewUser.gif)
@@ -14,9 +16,10 @@
 
                                          Document, note, and reminisce
                                              
-   ![](kin_loginAndView.gif)
+![](kin_loginAndView.gif)
 
 ------------------------------------------------------------------------------------------------------------------------------
+
 ## Project setup
 ```
 npm install

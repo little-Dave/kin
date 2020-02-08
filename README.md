@@ -18,9 +18,9 @@ The seeded data belong to username: dave password: test.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-                                         Document, note, and reminisce
+                                          Document, note, reminisce
                                              
-![](kin_loginAndView.gif)
+![](kin_documentNoteView.gif)
 
 ------------------------------------------------------------------------------------------------------------------------------
 

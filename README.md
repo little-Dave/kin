@@ -1,6 +1,10 @@
 # README
 ## Kin
-The best parts of life are often defined by the memories we make with other people. People — friends, family, *people* — help teach us about life and about ourselves, and in this way, they help us find meaning while we're here. We hold these memories in our hearts and feel them deeply, but every once in a while, years will go by before something — a smell, a song, the color of the sky — jogs a memory. Document it. Here. Let's spend more time reminding ourselves what life is really about. Spend more time remembering your kin. 
+The best parts of life are oft defined by memories we make with other people — memories we hold in our hearts and feel deeply. Every once in a while, years will go by before something — a smell, a song, the color of the sky — jogs a forgotten one. Document it. Here. Let's spend more time reminding ourselves what life is really about. Spend more time celebrating your kin.
+
+Current functionality is limited — all photos shown in GIF demos are seeded data, and demonstrate the app's intent. 
+Still, feel free to clone and check it out if you'd like. The API is available here: https://github.com/little-Dave/kin_api.
+The seeded data belong to username: dave password: test.
                                              
                                              Create an account
                                              
@@ -30,20 +34,7 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

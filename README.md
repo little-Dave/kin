@@ -12,7 +12,7 @@ The seeded data belong to username: dave password: test.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-                                         Login and view your peeps
+                                         Login and view your kin
                                              
 ![](kin_loginAndView.gif)
 

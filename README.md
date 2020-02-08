@@ -24,17 +24,19 @@ The seeded data belong to username: dave password: test.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-## Project setup
-```
-npm install
-```
+**The app uses these versions:**
+- Vue.js version 3.11.0
+- Rails version 5.2.3
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+**Project setup**
+- `npm install`
 
 
+**Compiles and hot-reloads for development**
+- `npm run serve`
 
-### Customize configuration
+
+Thanks for stopping by :thumbsup: 
+
+**Customize configuration**
 See [Configuration Reference](https://cli.vuejs.org/config/).

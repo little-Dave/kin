@@ -8,7 +8,7 @@ The seeded data belong to username: dave password: test.
                                              
                                              Create an account
                                              
-![](kin_createNewUser.gif)
+![](kin_createNewUser.gif
 
 ------------------------------------------------------------------------------------------------------------------------------
 

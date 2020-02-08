@@ -36,7 +36,7 @@ The seeded data belong to username: dave password: test.
 - `npm run serve`
 
 
-Thanks for stopping by :thumbsup: 
-
 **Customize configuration**
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- See [Configuration Reference](https://cli.vuejs.org/config/).
+
+Thanks for stopping by :thumbsup: 
